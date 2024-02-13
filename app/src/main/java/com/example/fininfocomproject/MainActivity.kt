@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
             Log.i("Neeraj pass" , loginPassText.getText().toString())
             if(verifyValidInput(loginIdText.getText().toString().trim() , loginPassText.getText().toString().trim()))
                 loginAuthorization( loginIdText.getText().toString().trim() ,  loginPassText.getText().toString().trim())
-              loginIdText.setText("")
-              loginPassText.setText("")
+            loginIdText.setText("")
+            loginPassText.setText("")
         }
 
         registerClickListener = View.OnClickListener {
@@ -180,6 +180,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun clearCredentialInputCache(){
+        Log.i("Neeraj" , "clearing credentials")
 
     }
 }
